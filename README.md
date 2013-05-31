@@ -19,15 +19,16 @@ As the name suggests, it gets the last tick price of one or more symbols through
 
 Usage:
 
->    $ python delayed.py SPY,GOOG,YHOO,EBAY
->    SPY SPDR S&P 500 165.83
->    GOOG Google Inc. 870.76
->    YHOO Yahoo! Inc. 26.33
->    EBAY eBay Inc. 55.10
+    $ python delayed.py SPY,GOOG,YHOO,EBAY
+    SPY SPDR S&P 500 165.83
+    GOOG Google Inc. 870.76
+    YHOO Yahoo! Inc. 26.33
+    EBAY eBay Inc. 55.10
 
 ## liveticker.py ##
 
 This is the script that keeps listening for prices. It will output new prices to your console as it hears them. When testing on a box against my feed from Goldman Sachs, it was often within 500ms, and it wasn't uncommon for ticks to come in *before* Interactive Brokers.  It's been >2 years since I've looked though, so I can't vouch for the feed, though as of May 30 2013, it appears to still work.
 
 Usage:
->    $ python liveticker.py SPY,GOOG,YHOO,EBAY
+
+    $ python liveticker.py SPY,GOOG,YHOO,EBAY
